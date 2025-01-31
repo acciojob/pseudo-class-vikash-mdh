@@ -1,8 +1,6 @@
-
 #container {
     margin: 20px;
     padding: 20px;
-    border: 2px solid black;
     text-align: center;
     font-size: 18px;
     position: relative; /* Ensures the pseudo-elements are positioned properly */
@@ -10,20 +8,18 @@
 
 #container::before,
 #container::after {
-    content: "Special Text";
-    color: #f00;
-    font-size: 20px;
-    display: block;
-    text-align: center;
-    font-weight: bold;
-}
+    color: #f00; /* Red color */
+    font-size: 20px; /* Font size for the inserted content */
+    display: block; /* Makes sure it appears on a new line */
+    font-weight: bold; /* Bold text */
+} 
 
 #container::before {
-    content: "Before the content!";
-    margin-bottom: 10px;
+    content: "Before the content!"; /* Text before the container */
+    margin-bottom: 10px; /* Space below the before text */
 }
 
 #container::after {
-    content: "After the content!";
-    margin-top: 10px;
+    content: "After the content!"; /* Text after the container */
+    margin-top: 10px; /* Space above the after text */
 }
