@@ -1,1 +1,21 @@
-/*  your css code here. If applicable */
+#container {
+    margin: 20px;
+    position: relative; /* Ensure that the pseudo-elements are positioned relative to the container */
+}
+
+#container::before,
+#container::after {
+    content: "Special Text";
+    color: #f00;
+    font-size: 20px;
+    display: block;
+    text-align: center; /* To align the text in the center of the container */
+}
+
+#container::before {
+    content: "Before the content!";
+}
+
+#container::after {
+    content: "After the content!";
+}
